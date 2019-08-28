@@ -26,6 +26,7 @@ public class Account {
 		this.accountHolderName = accountHolderName;
 		this.accountBalance = accountBalance;
 		this.accountType = accountType;
+		bankBalance=bankBalance+accountBalance;
 	}
 
 	public Account() {
@@ -75,6 +76,7 @@ public class Account {
 		this.setAccountHolderName(accountHolderName);
 		this.setAccountBalance(accountBalance);
 		this.setAccountType(accountType);
+		bankBalance= bankBalance+this.getAccountBalance();
 	}
 
 	/* Method to display account info */
